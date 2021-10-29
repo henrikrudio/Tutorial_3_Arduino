@@ -1,5 +1,3 @@
-
-
 extern "C"{
   #include "morse.h"
   #include "alphabet_morse.h"
@@ -11,9 +9,13 @@ void setup(){
 }
 
 void loop(){
-  S();
-  O();
-  S();
-
+  //a();
+  //b();
+  //c();
+  //d();
+  //e();
+  //f();
+  //g();
+  h();
   delay(2000);
 }

@@ -2,10 +2,44 @@
 #include "morse.h"
 #include "Arduino.h"
 
-void O(){
-  morse_multiple_dash(3);
+
+void a(){
+  morse_multiple_dot(1);
+  morse_multiple_dash(2);
 }
 
-void S(){
+void b(){
+  morse_multiple_dash(1);
   morse_multiple_dot(3);
+}
+
+void c(){
+  morse_multiple_dash(1);
+  morse_multiple_dot(1);
+  morse_multiple_dash(1);
+  morse_multiple_dot(1);
+}
+
+void d(){
+  morse_multiple_dash(1);
+  morse_multiple_dot(2);
+}
+
+void e(){
+  morse_multiple_dot(1);
+}
+
+void f(){
+  morse_multiple_dot(2);
+  morse_multiple_dash(1);
+  morse_multiple_dot(1);
+}
+
+void g(){
+  morse_multiple_dash(2);
+  morse_multiple_dot(1);
+}
+
+void h(){
+  morse_multiple_dot(4);
 }
