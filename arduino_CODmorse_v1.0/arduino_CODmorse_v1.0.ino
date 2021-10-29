@@ -3,7 +3,7 @@ void setup() {
 }
 
 void loop() {
-  morse_multiple_dot(3);
+  morse_multiple_dot(3); // chamo a função passando o valor 3
 
   morse_multiple_dash(3);
 
@@ -12,6 +12,7 @@ void loop() {
   delay(2000);
 }
 
+//Pisca o LED no padrão dot
 void dot(){
   digitalWrite(LED_BUILTIN, HIGH);
   delay(250);
@@ -19,6 +20,7 @@ void dot(){
   delay(250);
 }
 
+//Pisca o LED no padrão dash
 void dash(){
   digitalWrite(LED_BUILTIN, HIGH);
   delay(750);
@@ -26,12 +28,14 @@ void dash(){
   delay(250);
 }
 
+//Função que faz as repetições da função dot
 void morse_multiple_dot(int n){
   for(int i=0; i<n ; i++){
     dot();
   }
 }
 
+//função que faz as repetições da função dash
 void morse_multiple_dash(int n){
   for(int i=0; i<n ; i++){
     dash();
